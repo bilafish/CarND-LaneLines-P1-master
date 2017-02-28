@@ -28,10 +28,10 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by including conditions to sort the line segments according to gradient into two buckets: one for each side of the lane. A linear regression is used to obtain the m and b values which allows us to calculate the x value assuming that the y value is the height of the image (obtained from im.shape). Therefore, this will ensure that the lane lines will be drawn to a point along the bottom axis of the image by extrapolation.
 
 These are some of the lane lines detected from my test image set:
-![alt text][Solid White Curve]: ./test_images/solidWhiteCurve.jpg-test.jpg
-![alt text][Solid Yellow Curve]: ./test_images/solidYellowCurve.jpg-test.jpg
-![alt text][Solid Yellow Left]: ./test_images/solidYellowLeft.jpg-test.jpg
-![alt text][White Car Lane Switch]: ./test_images/whiteCarLaneSwitch.jpg-test.jpg
+[Solid White Curve]: ./test_images/solidWhiteCurve.jpg-test.jpg
+[Solid Yellow Curve]: ./test_images/solidYellowCurve.jpg-test.jpg
+[Solid Yellow Left]: ./test_images/solidYellowLeft.jpg-test.jpg
+[White Car Lane Switch]: ./test_images/whiteCarLaneSwitch.jpg-test.jpg
 
 
 ###2. Identify potential shortcomings with your current pipeline
